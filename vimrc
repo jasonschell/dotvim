@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set hidden
 set number
 set vb t_vb=
@@ -6,3 +9,6 @@ syntax on
 set clipboard=unnamed
 command! Status echo "All systems are go!"
 
+if has("autocmd")
+  filetype plugin indent on
+endif
