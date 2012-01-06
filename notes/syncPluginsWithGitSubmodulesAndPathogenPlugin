@@ -1,0 +1,31 @@
+using github to synchronize vim customizations
+
+vim configurations are in .vimrc in ~/
+
+customizations for graphical vim are in .gvimrc
+
+scripts are in a dir called .vim in ~/
+
+.vimrc and .gvimrc can be moved into .vim
+
+you have to create a symbolic link from the old .vimrc and .gvimrc to the dirs in ~/.vim
+
+you can then easily install the vim configuration files on any machine that has git installed
+
+publish your vim configuration files to github
+
+create a new repository in github, push (upload) instructions are on github
+
+next step is installing to new machine, all you have to do is have git and vim installed on the new system
+
+then you follow your README to create symbolic links and pull (download) the latest vers to local
+
+SYNCHRONIZING PLUGINS
+
+typically, to install vim plugins, you copy each script in the plugin into a corresponding .vim subdirectory
+
+when you follow the typical installation procedure, your scripts end up distributed differently from the git repository, and updating them is thus disrupted.
+
+To reconcile installation and preserve version control, pathogen is a plugin that allows all plugin files to exist in a single directory.
+
+go to root ~/.vim directory
